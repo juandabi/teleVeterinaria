@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-22T02:38:06.148Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="oz-VGUj07dCSXkkpLzo5" version="15.2.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-09-22T02:38:41.242Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="PGY5_x2IuMo-pDoa1gS_" version="15.2.9" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Diagrama de clases">
     <mxGraphModel dx="1774" dy="1818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -240,6 +240,14 @@
             <mxPoint x="410" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t9j4fwIi0588aJWdHTVK" name="Entidad relacion">
+    <mxGraphModel dx="1242" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="sDra5znRwBIvPfDKuIsq-0" />
+        <mxCell id="sDra5znRwBIvPfDKuIsq-1" parent="sDra5znRwBIvPfDKuIsq-0" />
       </root>
     </mxGraphModel>
   </diagram>
