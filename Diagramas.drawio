@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-26T04:19:23.538Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="u8MUGALHOdnBhp-WN5kJ" version="15.3.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-26T04:23:47.339Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="0GVLCBJQ9shXl2lJXmMz" version="15.3.2" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Diagrama de clases">
     <mxGraphModel dx="1257" dy="1279" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -190,10 +190,14 @@
         <mxCell id="pY96gX7bV9BrttwrZuQb-14" value="-" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;rounded=1;fontColor=#1A1A1A;" parent="pY96gX7bV9BrttwrZuQb-11" vertex="1">
           <mxGeometry y="128" width="200" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="pY96gX7bV9BrttwrZuQb-15" value="Se asigna" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.508;exitY=1.044;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#182E3E;fontColor=#1A1A1A;labelBackgroundColor=#EEEEEE;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-j1Tto38x53j7O7jgbnA-25" target="-j1Tto38x53j7O7jgbnA-34" edge="1">
+        <mxCell id="pY96gX7bV9BrttwrZuQb-15" value="Se atiende" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.485;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#182E3E;fontColor=#1A1A1A;labelBackgroundColor=#EEEEEE;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-j1Tto38x53j7O7jgbnA-16" target="-j1Tto38x53j7O7jgbnA-34" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="585" y="260.0000000000002" as="sourcePoint" />
             <mxPoint x="734.4000000000001" y="261.2800000000002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="877" y="276" />
+              <mxPoint x="530" y="276" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="pY96gX7bV9BrttwrZuQb-16" value="Tiene" style="endArrow=open;endFill=1;endSize=12;html=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1.009;exitY=0.952;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#182E3E;fontColor=#1A1A1A;labelBackgroundColor=#EEEEEE;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-j1Tto38x53j7O7jgbnA-35" target="pY96gX7bV9BrttwrZuQb-11" edge="1">
