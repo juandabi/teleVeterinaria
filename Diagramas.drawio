@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-26T04:30:34.642Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="edgug8FdKaLqsq_QjJxv" version="15.3.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-26T04:59:51.647Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="QswGVrPQHuXqT9e_cUqr" version="15.3.2" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Diagrama de clases">
-    <mxGraphModel dx="2070" dy="1957" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="591" dy="1130" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -145,7 +145,7 @@
         <mxCell id="pY96gX7bV9BrttwrZuQb-5" value="Diagnostico" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=14;html=1;rounded=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1" y="312" width="200" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="pY96gX7bV9BrttwrZuQb-6" value="- CodigoDiagnostico: int&#xa;- FechaDiagnostico: DataTime&#xa;- TarjetaProfesional: int&#xa;- EstadoSalud: string&#xa;- Diagnostico: string&#xa;- Cuidados: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;rounded=1;fontColor=#1A1A1A;" parent="pY96gX7bV9BrttwrZuQb-5" vertex="1">
+        <mxCell id="pY96gX7bV9BrttwrZuQb-6" value="- CodigoDiagnostico: int&#xa;- FechaDiagnostico: DataTime&#xa;- TarjetaProfesional: int&#xa;- EstadoSalud: string&#xa;- DiagnosticoActual: string&#xa;- Cuidados: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;rounded=1;fontColor=#1A1A1A;" parent="pY96gX7bV9BrttwrZuQb-5" vertex="1">
           <mxGeometry y="26" width="200" height="114" as="geometry" />
         </mxCell>
         <mxCell id="pY96gX7bV9BrttwrZuQb-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;rounded=1;strokeColor=#909090;fontColor=#1A1A1A;labelBackgroundColor=#EEEEEE;" parent="pY96gX7bV9BrttwrZuQb-5" vertex="1">
@@ -293,7 +293,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="t9j4fwIi0588aJWdHTVK" name="Entidad relacion">
-    <mxGraphModel dx="2174" dy="1391" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1861" dy="1216" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="sDra5znRwBIvPfDKuIsq-0" />
         <mxCell id="sDra5znRwBIvPfDKuIsq-1" parent="sDra5znRwBIvPfDKuIsq-0" />
@@ -768,7 +768,7 @@
             <mxRectangle width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MP73Cl9R1XtAPdgyM2Kc-2" value="Diagnostico: string" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=#909090;fontColor=#1A1A1A;" parent="MP73Cl9R1XtAPdgyM2Kc-0" vertex="1">
+        <mxCell id="MP73Cl9R1XtAPdgyM2Kc-2" value="DiagnosticoActual: string" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=#909090;fontColor=#1A1A1A;" parent="MP73Cl9R1XtAPdgyM2Kc-0" vertex="1">
           <mxGeometry x="60" width="180" height="30" as="geometry">
             <mxRectangle width="180" height="30" as="alternateBounds" />
           </mxGeometry>
