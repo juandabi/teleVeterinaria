@@ -3,7 +3,7 @@ using System;
 namespace Veterinaria.App.Dominio
 {
     public class Diagnostico { 
-      public int CodigoDiagnostico {get;set;}
+      public int Id {get;set;}
       public int CodigoMascota {get;set;}
       public int TarjetaProfesional {get;set;}
       public DateTime FechaDiagnostico {get;set;}
