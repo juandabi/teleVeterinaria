@@ -21,9 +21,25 @@ namespace Veterinaria.App.Persistencia
       this.appContext.SaveChanges();
       return cuidadorAdicionado.Entity;
     }
-    public Cuidador EditarCuidador(Cuidador cuidador)
+    public Cuidador EditarCuidador(Cuidador cuidadorNuevo)
     {
-      return null;
+
+      var cuidadorEncontrado = this.appContext.Cuidadores.FirstOrDefault(v => v.Id == cuidadorNuevo.Id);
+      if (cuidadorEncontrado != null)
+      {
+        cuidadorEncontrado.Nombre = cuidadorNuevo.Nombre;
+        cuidadorEncontrado.Apellido = cuidadorNuevo.Apellido;
+        cuidadorEncontrado.Telefono = cuidadorNuevo.Telefono;
+        cuidadorEncontrado.DireccionResidencia = cuidadorNuevo.DireccionResidencia;
+        cuidadorEncontrado.CorreoElectronico = cuidadorNuevo.CorreoElectronico;
+        cuidadorEncontrado.Sexo = cuidadorNuevo.Sexo;
+        cuidadorEncontrado.FechaNacimiento = cuidadorNuevo.FechaNacimiento;
+        cuidadorEncontrado.FechaRegistro = cuidadorNuevo.FechaRegistro;
+        cuidadorEncontrado.Password = cuidadorNuevo.Password;
+        cuidadorEncontrado.IdMascota = cuidadorNuevo.IdMascota;
+        this.appContext.SaveChanges();
+      }
+      return cuidadorEncontrado;
     }
     public void EliminarCuidador(int idCuidador)
     {

@@ -21,10 +21,20 @@ namespace Veterinaria.App.Persistencia
       this.appContext.SaveChanges();
       return citaAdicionado.Entity;
     }
-    public Cita EditarCita(Cita cita)
+    public Cita EditarCita(Cita citaNuevo)
     {
-      return null;
-    }
+
+      var citaEncontrado = this.appContext.Citas.FirstOrDefault(v => v.Id == citaNuevo.Id);
+      if (citaEncontrado != null)
+      {
+        citaEncontrado.FechaAsignacion = citaNuevo.FechaAsignacion;
+        citaEncontrado.FechaSolicitud = citaNuevo.FechaSolicitud;
+        citaEncontrado.CodigoMascota = citaNuevo.CodigoMascota;
+        citaEncontrado.TarjetaProfesional = citaNuevo.TarjetaProfesional;
+        citaEncontrado.Identificacion = citaNuevo.Identificacion;
+        this.appContext.SaveChanges();
+      }
+      return citaEncontrado;    }
     public void EliminarCita(int idCita)
     {
       var citaEncontrado = this.appContext.Citas.FirstOrDefault(v => v.Id == idCita);

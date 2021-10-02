@@ -21,9 +21,25 @@ namespace Veterinaria.App.Persistencia
       this.appContext.SaveChanges();
       return veterinarioAdicionado.Entity;
     }
-    public Veterinario EditarVeterinario(Veterinario veterinario)
+    public Veterinario EditarVeterinario(Veterinario veterinarioNuevo)
     {
-      return null;
+      var veterinarioEncontrado = this.appContext.Veterinarios.FirstOrDefault(v => v.Id == veterinarioNuevo.Id);
+      if (veterinarioEncontrado != null)
+      {
+        veterinarioEncontrado.Nombre = veterinarioNuevo.Nombre;
+        veterinarioEncontrado.Apellido = veterinarioNuevo.Apellido;
+        veterinarioEncontrado.Telefono = veterinarioNuevo.Telefono;
+        veterinarioEncontrado.DireccionResidencia = veterinarioNuevo.DireccionResidencia;
+        veterinarioEncontrado.CorreoElectronico = veterinarioNuevo.CorreoElectronico;
+        veterinarioEncontrado.Sexo = veterinarioNuevo.Sexo;
+        veterinarioEncontrado.FechaNacimiento = veterinarioNuevo.FechaNacimiento;
+        veterinarioEncontrado.FechaRegistro = veterinarioNuevo.FechaRegistro;
+        veterinarioEncontrado.Password = veterinarioNuevo.Password;
+        veterinarioEncontrado.TarjetaProfesional = veterinarioNuevo.TarjetaProfesional;
+        veterinarioEncontrado.Especializacion = veterinarioNuevo.Especializacion;
+        this.appContext.SaveChanges();
+      }
+      return veterinarioEncontrado;
     }
     public void EliminarVeterinario(int idVeterinario)
     {

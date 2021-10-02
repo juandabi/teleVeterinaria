@@ -21,9 +21,19 @@ namespace Veterinaria.App.Persistencia
       this.appContext.SaveChanges();
       return mascotaAdicionado.Entity;
     }
-    public Mascota EditarMascota(Mascota mascota)
+    public Mascota EditarMascota(Mascota mascotaNuevo)
     {
-      return null;
+
+      var mascotaEncontrado = this.appContext.Mascotas.FirstOrDefault(v => v.Id == mascotaNuevo.Id);
+      if (mascotaEncontrado != null)
+      {
+        mascotaEncontrado.Especie = mascotaNuevo.Especie;
+        mascotaEncontrado.Raza = mascotaNuevo.Raza;
+        mascotaEncontrado.Nombre = mascotaNuevo.Nombre;
+        mascotaEncontrado.FechaNacimiento = mascotaNuevo.FechaNacimiento;
+        this.appContext.SaveChanges();
+      }
+      return mascotaNuevo;
     }
     public void EliminarMascota(int idMascota)
     {

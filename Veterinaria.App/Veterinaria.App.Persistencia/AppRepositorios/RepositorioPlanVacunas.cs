@@ -21,9 +21,19 @@ namespace Veterinaria.App.Persistencia
       this.appContext.SaveChanges();
       return planVacunasAdicionado.Entity;
     }
-    public PlanVacunas EditarPlanVacunas(PlanVacunas planVacunas)
+    public PlanVacunas EditarPlanVacunas(PlanVacunas planVacunasNuevo)
     {
-      return null;
+
+      var planVacunasEncontrado = this.appContext.PlanesVacunas.FirstOrDefault(v => v.Id == planVacunasNuevo.Id);
+      if (planVacunasEncontrado != null)
+      {
+        planVacunasEncontrado.CodigoMascota = planVacunasNuevo.CodigoMascota;
+        planVacunasEncontrado.TarjetaProfesional = planVacunasNuevo.TarjetaProfesional;
+        planVacunasEncontrado.FechaVacunas = planVacunasNuevo.FechaVacunas;
+        planVacunasEncontrado.VacunasAplicadas = planVacunasNuevo.VacunasAplicadas;
+        this.appContext.SaveChanges();
+      }
+      return planVacunasEncontrado;
     }
     public void EliminarPlanVacunas(int idPlanVacunas)
     {

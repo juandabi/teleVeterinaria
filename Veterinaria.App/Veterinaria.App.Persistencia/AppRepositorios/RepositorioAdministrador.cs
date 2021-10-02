@@ -21,9 +21,25 @@ namespace Veterinaria.App.Persistencia
       this.appContext.SaveChanges();
       return administradorAdicionado.Entity;
     }
-    public Administrador EditarAdministrador(Administrador administrador)
+    public Administrador EditarAdministrador(Administrador administradorNuevo)
     {
-      return null;
+
+      var administradorEncontrado = this.appContext.Administradores.FirstOrDefault(v => v.Id == administradorNuevo.Id);
+      if (administradorEncontrado != null)
+      {
+        administradorEncontrado.Nombre = administradorNuevo.Nombre;
+        administradorEncontrado.Apellido = administradorNuevo.Apellido;
+        administradorEncontrado.Telefono = administradorNuevo.Telefono;
+        administradorEncontrado.DireccionResidencia = administradorNuevo.DireccionResidencia;
+        administradorEncontrado.CorreoElectronico = administradorNuevo.CorreoElectronico;
+        administradorEncontrado.Sexo = administradorNuevo.Sexo;
+        administradorEncontrado.FechaNacimiento = administradorNuevo.FechaNacimiento;
+        administradorEncontrado.FechaRegistro = administradorNuevo.FechaRegistro;
+        administradorEncontrado.Password = administradorNuevo.Password;
+        administradorEncontrado.CodigoAdministrador = administradorNuevo.CodigoAdministrador;
+        this.appContext.SaveChanges();
+      }
+      return administradorEncontrado;
     }
     public void EliminarAdministrador(int idAdministrador)
     {

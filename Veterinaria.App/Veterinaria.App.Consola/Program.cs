@@ -11,25 +11,36 @@ namespace Veterinaria.App.Consola
     static void Main(string[] args)
     {
       Console.WriteLine("Hello World!");
-      AgregarVeterinario();
+      //AgregarVeterinario();
+      //eliminarVeterinario(3);
+      //getVeterinario(3);
+      //EditarVeterinario(2);
     }
-    private static void AgregarVeterinario() {
-        Veterinario veterinario = new Veterinario{
-            Nombre = "Juan",
-            Apellido ="Cardona",
-            Telefono = "323232",
-            DireccionResidencia ="calle 40 carrera 30",
-            CorreoElectronico = "juan@gmail.com",
-            Sexo ="Masculino",
-            FechaNacimiento = new DateTime (1993, 10 , 13),
-            FechaRegistro = new DateTime (2021, 09 , 26),
-            TarjetaProfesional = 12321,
-            Especializacion = "Felinos",
-            Password ="contrasena",
+    private static void EditarVeterinario(int IdVeterinario)
+    {
+      Veterinario veterinario = new Veterinario
+      {
+        Id = IdVeterinario,
+        Nombre = "Carlos",
+        Apellido = "Cardona",
+        Telefono = "43423",
+        DireccionResidencia = "calle 40 carrera 30",
+        CorreoElectronico = "nolose@gmail.com",
+        Sexo = "Masculino",
+        FechaNacimiento = new DateTime(1993, 10, 13),
+        FechaRegistro = new DateTime(2021, 09, 26),
+        TarjetaProfesional = 12321,
+        Especializacion = "Felinos",
+        Password = "3432nuf43",
 
-        };
-        repositorioVeterinario.AgregarVeterinario(veterinario);
+      };
+      repositorioVeterinario.EditarVeterinario(veterinario);
 
-     }
+    }
+    private static void EliminarVeterinario(int idVeterinario)
+    {
+      repositorioVeterinario.EliminarVeterinario(idVeterinario);
+
+    }
   }
 }

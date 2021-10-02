@@ -21,10 +21,21 @@ namespace Veterinaria.App.Persistencia
       this.appContext.SaveChanges();
       return diagnosticoAdicionado.Entity;
     }
-    public Diagnostico EditarDiagnostico(Diagnostico diagnostico)
+    public Diagnostico EditarDiagnostico(Diagnostico diagnosticoNuevo)
     {
-      return null;
-    }
+
+      var diagnosticoEncontrado = this.appContext.Diagnosticos.FirstOrDefault(v => v.Id == diagnosticoNuevo.Id);
+      if (diagnosticoEncontrado != null)
+      {
+        diagnosticoEncontrado.CodigoMascota = diagnosticoNuevo.CodigoMascota;
+        diagnosticoEncontrado.TarjetaProfesional = diagnosticoNuevo.TarjetaProfesional;
+        diagnosticoEncontrado.FechaDiagnostico = diagnosticoNuevo.FechaDiagnostico;
+        diagnosticoEncontrado.EstadoSalud = diagnosticoNuevo.EstadoSalud;
+        diagnosticoEncontrado.DiagnosticoActual = diagnosticoNuevo.DiagnosticoActual;
+        diagnosticoEncontrado.Cuidados = diagnosticoNuevo.Cuidados;
+        this.appContext.SaveChanges();
+      }
+      return diagnosticoEncontrado;    }
     public void EliminarDiagnostico(int idDiagnostico)
     {
       var diagnosticoEncontrado = this.appContext.Diagnosticos.FirstOrDefault(v => v.Id == idDiagnostico);
