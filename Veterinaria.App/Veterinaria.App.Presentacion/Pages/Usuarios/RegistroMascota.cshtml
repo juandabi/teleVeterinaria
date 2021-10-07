@@ -1,0 +1,53 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.RegistroMascotaModel
+@{
+}
+
+<div class="mx-auto plantilla-fondo" style="width: 90%">
+  <h1 class="text-center">Registro de mascota</h1>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="Nombre">Nombre *</label>
+        <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="Especie">Especie *</label>
+        <select id="Especie" class="form-control">
+          <option selected>Seleccionar..</option>
+          <option>Gato</option>
+          <option>Perro</option>
+          <option>Conejo</option>
+          <option>Hamster</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="Raza">Raza *</label>
+        <input type="text" class="form-control" id="Raza" placeholder="Raza">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="sexo">Sexo *</label>
+        <select id="sexo" class="form-control">
+          <option selected>Seleccionar..</option>
+          <option>Macho</option>
+          <option>Hembra</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="fechaNacimiento">Fecha de nacimiento *</label>
+        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+      </div>
+      <div class="form-group col-md-6">
+
+      </div>
+    </div>
+    <div class="mx-auto text-center">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <a href="#" class="btn btn-primary">Regresar</a>
+    </div>
+  </form>
+</div>

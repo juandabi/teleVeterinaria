@@ -29,6 +29,7 @@ namespace Veterinaria.App.Persistencia
       {
         mascotaEncontrado.Especie = mascotaNuevo.Especie;
         mascotaEncontrado.Raza = mascotaNuevo.Raza;
+        mascotaEncontrado.Sexo = mascotaNuevo.Sexo;
         mascotaEncontrado.Nombre = mascotaNuevo.Nombre;
         mascotaEncontrado.FechaNacimiento = mascotaNuevo.FechaNacimiento;
         this.appContext.SaveChanges();
